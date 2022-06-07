@@ -3,7 +3,7 @@
 	font-family: 'Raleway', sans-serif;
 }
 /* header version desktop */
-header{
+.header_top{
 	display: flex;
 	justify-content: space-between;
 }

@@ -16,22 +16,48 @@
 
 	<!-- Intégration de FontAwesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<title>Booki</title>
 </head>
 <body>
 	<header>
-		<!-- logo -->
-		<figure>
-			<img class="logo" src="images/logo/Booki.png" alt="logo Booki" >
-		</figure>
-		<!-- liens de navigation -->
-		<nav>
-			<ul>
-				<li><a href="#">Hébergements</a></li>
-				<li><a href="#">Activités</a></li>
-			</ul>
-		</nav>
+		<div class="header_top">
+			
+			<!-- logo -->
+			<figure>
+				<img class="logo" src="images/logo/Booki.png" alt="logo Booki"/>
+			</figure>
+			
+			<!-- liens de navigation -->
+			<nav>
+				<ul>
+					<li><a href="#">Hébergements</a></li>
+					<li><a href="#">Activités</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<!-- Description du site -->
+		<div class="header_description">
+			<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+			<p> En plein centre ville ou en pleine nature</p>
+		</div>
 	</header>
+	
+	<!-- Formulaire de recherche -->
+	<section class=research_form>
+		<span class="fa-stack">
+			<i class="fa fa-square-o fa-stack-2x"></i>
+			<i class="material-icons fa-stack-1x">place</i>
+		</span>
+		<form method="post" action="#">
+			<p><input type="text" name="town" placeholder="Marseille, France"/></p>
+		</form>
+		<form method="post" action="#">
+			<p><input type="submit" value="Rechercher"/></p>
+		</form>
+	</section>
 </body>
 </html>

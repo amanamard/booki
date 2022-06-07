@@ -17,7 +17,7 @@
 	<!-- Intégration de FontAwesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 
 	<title>Booki</title>
 </head>
@@ -48,15 +48,12 @@
 	
 	<!-- Formulaire de recherche -->
 	<section class=research_form>
-		<span class="fa-stack">
-			<i class="fa fa-square-o fa-stack-2x"></i>
-			<i class="material-icons fa-stack-1x">place</i>
-		</span>
 		<form method="post" action="#">
-			<p><input type="text" name="town" placeholder="Marseille, France"/></p>
-		</form>
-		<form method="post" action="#">
-			<p><input type="submit" value="Rechercher"/></p>
+			<label for="place">
+			<i class="material-icons">place</i>
+			</label>
+			<input type="text" name="place" id="place" placeholder="Marseille, France"/>
+			<button>Rechercher</button>
 		</form>
 	</section>
 </body>

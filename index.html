@@ -4,6 +4,7 @@
 	<!-- Ajout des meta charset et viewport -->
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
 
 	<!-- Ajout fichiers normalize.css et style.css  -->
 	<link rel="stylesheet" href="css/normalize.css"/>
@@ -15,10 +16,7 @@
 	</style>
 
 	<!-- Intégration de FontAwesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">	
 	<title>Booki</title>
 </head>
 <body>
@@ -42,12 +40,12 @@
 		<!-- Description du site -->
 		<div class="header_description">
 			<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-			<p> En plein centre ville ou en pleine nature</p>
+			<p>En plein centre ville ou en pleine nature</p>
 		</div>
 	</header>
 	
 	<!-- Formulaire de recherche -->
-	<section class=research_form>
+	<section class="research_form">
 		<form method="post" action="#">
 			<div class="place">
 			<i class="material-icons">place</i>
@@ -56,5 +54,18 @@
 			<button>Rechercher</button>
 		</form>
 	</section>
+
+	<!-- Filtres -->
+	<section class="filters">
+		<h3>Filtres</h3>
+		<div class="filters_description">
+			<div class="economic">
+				<i class='fas fa-money-bill-wave'></i>
+				
+				<i class='fas fa-map-marker-alt'></i>
+			</div>
+		</div>
+	</section>
+
 </body>
 </html>

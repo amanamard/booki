@@ -10,13 +10,10 @@
 	<link rel="stylesheet" href="css/normalize.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 
-	<!-- Importation police Raleway depuis Google Font -->
-	<style>
- 	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
-	</style>
-
 	<!-- Intégration de FontAwesome -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">	
+	<link rel="stylesheet" 
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	
 	<title>Booki</title>
 </head>
 <body>
@@ -48,7 +45,7 @@
 	<section class="research_form">
 		<form method="post" action="#">
 			<div class="place">
-			<i class="material-icons">place</i>
+			<i class='fas fa-map-marker-alt'></i>
 			</div>
 			<input type="text" name="place" placeholder="Marseille, France"/>
 			<button>Rechercher</button>
@@ -58,12 +55,57 @@
 	<!-- Filtres -->
 	<section class="filters">
 		<h3>Filtres</h3>
-		<div class="filters_description">
-			<div class="economic">
-				<i class='fas fa-money-bill-wave'></i>
-				
-				<i class='fas fa-map-marker-alt'></i>
+		<div class="filters_types">
+			
+			<div>
+				<span class="fa-stack fa-lg">
+					<i class='far fa-circle fa-stack-2x'></i>
+  					<i class='fas fa-money-bill-wave fa-stack-1x'></i>
+  				</span>
+  				<div> 
+  					<h3>Economique</h3>
+  				</div>
 			</div>
+
+			<div>
+				<span class="fa-stack fa-lg">
+					<i class='far fa-circle fa-stack-2x'></i>
+  					<i class="fa-solid fa-child-reaching fa-stack-1x"></i>
+  				</span>
+  				<div> 
+  					<h3>Familial</h3>
+  				</div>
+			</div>
+
+			<div>
+				<span class="fa-stack fa-lg">
+					<i class='far fa-circle fa-stack-2x'></i>
+  					<i class="fas fa-heart fa-stack-1x"></i>
+  				</span>
+  				<div> 
+  					<h3>Romantique</h3>
+  				</div>
+			</div>
+
+			<div>
+				<span class="fa-stack fa-lg">
+					<i class='far fa-circle fa-stack-2x'></i>
+  					<i class="fa-solid fa-dog fa-stack-1x"></i>
+  				</span>
+  				<div> 
+  					<h3>Animaux autorisés</h3>
+  				</div>
+			</div>
+		</div>
+
+		<div class="filters_description">
+			<span class="fa-stack fa-lg">
+					<i class='far fa-circle fa-stack-2x'></i>
+  					<i class="fa-solid fa-info fa-stack-1x"></i>
+  				</span>
+  				<div> 
+  					<p>Plus de 500 logements sont disponibles dans cette ville</p>
+  				</div>
 		</div>
 	</section>
 

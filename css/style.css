@@ -27,7 +27,7 @@ li a{
 	padding: 20px;
 	
 }
-ul li a:hover{
+nav li a:hover{
 	border-top: 2px solid #0065FC;
 	color: #0065FC;
 }

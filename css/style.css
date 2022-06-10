@@ -3,7 +3,12 @@
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
 }
-/* header version desktop */
+#bloc_page{
+	width: 1080px;
+    margin: auto;
+}
+
+/* start header version desktop */
 .header_top{
 	display: flex;
 	justify-content: space-between;
@@ -30,7 +35,114 @@ li a{
 nav li a:hover{
 	border-top: 2px solid #0065FC;
 	color: #0065FC;
+} /* end header version desktop */
+
+/* start search form */
+.search_form{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	background: #0065FC;
+	border: 1px solid #F2F2F2;
+	color: white;
+	font-weight: bold;
 }
+#place{
+	position: relative;
+  	bottom: 16px;
+  	border-radius: 15px 0px 0px 15px;
+	background: #F2F2F2;
+	width: 50px;
+	color: black;
+
+}
+#position{
+	position: relative;
+  	top: 18px;
+  	left: 18px;
+  	border-right: 1px none #F2F2F2;
+}
+#city{
+	position: relative;
+	right: 4px;
+	background: white;
+	width: 220px;
+	padding-left: 10px;
+	color: black;
+	font-weight: bold;
+}
+#research{
+	position: relative;
+	right: 8px;
+	border-left: 1px none #F2F2F2;
+	border-radius: 0px 15px 15px 0px;
+	width: 150px;
+} /* end search form */
+
+.filters{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  row-gap: 20px;
+  margin: auto;
+  align-items: center;
+  background: white;
+  border: 2px solid #F2F2F2;
+  border-left: 1px none #F2F2F2;
+  border-radius: 50px 50px;
+  width: 200px;
+  height: 50px;  
+}
+.filter_icon{
+	border: 1px solid #F2F2F2;
+	border-radius: 50px 50px;
+	background: #deebff;
+	width: 50px;
+	height: 50px;
+}
+.filter_item, .info{
+	padding-left: 10px;
+}
+
+.filters_description{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: auto;
+	row-gap: 20px;
+}
+.description_icon{
+	border: 2px solid #F2F2F2;
+	border-radius: 20px 20px;
+	background: white;
+	width: 20px;
+	height: 20px;
+}
+.icon{
+	color: blue;
+	position: relative;
+	top: 15px;
+	left: 15px;
+}
+.info_icon{
+	color: blue;
+	font-size: 75%;
+	position: relative;
+	bottom: 3px;
+	left: 6px;
+	font-weight: bold;
+}
+
+
+
+
+
+
 
 @media screen and (max-width: 768px){
 	*{

@@ -17,6 +17,7 @@
 	<title>Booki</title>
 </head>
 <body>
+<main id="bloc_page">
 	<header>
 		<div class="header_top">
 			
@@ -33,98 +34,69 @@
 				</ul>
 			</nav>
 		</div>
-		
-		<!-- Description du site -->
-		<div class="header_description">
-			<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-			<p>En plein centre ville ou en pleine nature</p>
-		</div>
+		<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+		<p>En plein centre ville ou en pleine nature</p>
 	</header>
-	
-	<!-- Formulaire de recherche -->
-	<section class="research_form">
-		<form method="post" action="#">
-			<div class="place">
-			<i class='fas fa-map-marker-alt'></i>
-			</div>
-			<input type="text" name="place" placeholder="Marseille, France"/>
-			<button>Rechercher</button>
-		</form>
-	</section>
 
+	<!-- Formulaire de recherche -->
+	<form method="post" action="#">
+		<div class="search_form" id="place">
+			<i class='fas fa-map-marker-alt' id="position"></i>
+		</div>
+		<input class="search_form" id="city" type="text" name="place" placeholder="Marseille, France"/>
+		<button class="search_form" id="research">Rechercher</button>
+	</form>
+	
 	<!-- Filtres -->
 	<section class="filters">
 		<h3>Filtres</h3>
 		<div class="filter">
+			<div class="filter_icon">
+				<i class="fa-solid fa-money-bill-wave icon"></i>
+	  		</div>
+	  		<div class="filter_item">
+	  			<h3>Economique</h3>
+	  		</div>
+	  	</div>
 			
-			<div class="filter_economic">
-				<a href="#">
-				<div>
-					<span class="fa-stack fa-lg">
-						<i class='far fa-circle fa-stack-2x'></i>
-	  					<i class='fas fa-money-bill-wave fa-stack-1x'></i>
-	  				</span>
-	  				<div> 
-	  					<h3>Economique</h3>
-	  				</div>
-				</div>
-				</a>
-			</div>
-
-			<div class="filter_family">
-				<a href="#">
-				<div>
-					<span class="fa-stack fa-lg">
-						<i class='far fa-circle fa-stack-2x'></i>
-	  					<i class="fa-solid fa-child-reaching fa-stack-1x"></i>
-	  				</span>
-	  				<div> 
-	  					<h3>Familial</h3>
-	  				</div>
-				</div>
-				</a>
-			</div>
-
-			<div class="filter_romantic">
-				<a href="#">
-				<div>
-					<span class="fa-stack fa-lg">
-						<i class='far fa-circle fa-stack-2x'></i>
-	  					<i class="fas fa-heart fa-stack-1x"></i>
-	  				</span>
-	  				<div> 
-	  					<h3>Romantique</h3>
-	  				</div>
-				</div>
-				</a>
-			</div>
-
-
-			<div class="filter_animals">
-				<a href="#">
-				<div>
-					<span class="fa-stack fa-lg">
-						<i class='far fa-circle fa-stack-2x'></i>
-	  					<i class="fa-solid fa-dog fa-stack-1x"></i>
-	  				</span>
-	  				<div> 
-	  					<h3>Animaux autorisés</h3>
-	  				</div>
-				</div>
-				</a>
-			</div>
+		<div class="filter">
+			<div class="filter_icon">
+				<i class="fa-solid fa-child-reaching icon"></i>
+	  		</div>
+	  		<div class="filter_item"> 
+	  			<h3>Familial</h3>
+	  		</div>
 		</div>
-
-		<div class="filters_description">
-			<span class="fa-stack fa-lg">
-					<i class='far fa-circle fa-stack-2x'></i>
-  					<i class="fa-solid fa-info fa-stack-1x"></i>
-  				</span>
-  				<div> 
-  					<p>Plus de 500 logements sont disponibles dans cette ville</p>
-  				</div>
+			
+		<div class="filter">
+			<div class="filter_icon">
+				<i class="fa-solid fa-heart icon"></i>
+	  		</div>
+	  		<div class="filter_item">
+	  			<h3>Romantique</h3>
+	  		</div>
+		</div>
+		
+		
+		<div class="filter">
+			<div class="filter_icon">
+				<i class="fa-solid fa-dog icon"></i>
+	  		</div>
+	  		<div class="filter_item">
+	  			<h3>Animaux autorisés</h3>
+	  		</div>
 		</div>
 	</section>
+
+	<div class="filters_description">
+		<div class="description_icon">
+			<i class="fa-solid fa-info info_icon"></i>
+  		</div>
+  		<div class="info"> 
+  			<p>Plus de 500 logements sont disponibles dans cette ville</p>
+  		</div>
+	</div>
+	
 	
 	<!-- Hébergements à Marseille -->
 	<section class="hébergements">
@@ -388,5 +360,6 @@
 			</ul>
 		</div>
 	</footer>
+</main>
 </body>
 </html>

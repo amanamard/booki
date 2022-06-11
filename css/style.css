@@ -136,8 +136,139 @@ nav li a:hover{
 	bottom: 3px;
 	left: 6px;
 	font-weight: bold;
+} /* end search form */
+
+/* start Hébergement à Marseille */
+.hébergements{
+	display: flex;
+	flex-direction: row;
+	gap: 25px;
+	justify-content: space-between;
+	
+	margin: auto;
+	
 }
 
+.card1{
+	background: #F2F2F2;
+	border-radius: 15px 15px;
+	width: 70%;
+	height: 75%;
+
+	
+}
+
+.popular{
+	background: #F2F2F2;
+	border-radius: 15px 15px;
+	width: 30%;
+	height: 75%;
+	padding: auto;
+
+}
+
+.card{
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 15px 15px;
+  width: 200px;
+  height: 250px;
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card_container {
+  padding: 0;
+  margin: 0;
+}
+
+.card_choice{
+		display: flex;  
+  	flex-wrap: wrap;
+  	justify-content: space-evenly;
+  	gap: 10px 10px;
+}
+
+.card_image img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  padding: 5px 5px 0px 5px;
+  margin: 0;
+  border-radius: 15px 15px 0px 0px;
+}
+.card_image{
+	margin: 0;
+	padding: 0;
+}/* end Hébergement à Marseille */
+
+/* start Les plus populaires */
+
+.popular
+
+.popular_title{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+
+.card_popular{
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	margin: auto;
+	
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 15px 15px;
+  width: 300px;
+  height: 125px;
+
+}
+
+
+.card_popular:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card_popular-container{
+  padding: 0;
+  margin: 0;
+  width: 185px;
+  height: 100px;
+}
+
+
+
+.card_popular-choice{
+	display: flex;  
+  	flex-direction: column;/*flex-wrap: wrap;*/
+  	/*justify-content: space-evenly;*/
+  	align-content: center;
+  	margin: auto;
+  	gap: 20px 20px;
+}
+
+.card_popular-image img {
+  width: 115px;
+  height: 125px;
+  object-fit: cover;
+  padding: 5px 0px 5px 5px;
+  margin: 0;
+  border-radius: 15px 0px 0px 15px;
+}
+.card_popular-image{
+	margin: 0;
+	padding: 0;
+}/* end Les plus populaires */
 
 
 

@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 *{
 	box-sizing: border-box;
-	font-family: 'Raleway', sans-serif;
 }
-#bloc_page{
-	width: 1080px;
-    margin: auto;
+
+body{
+	font-family: 'Raleway', sans-serif;
+	max-width: 1280px;
+  margin: auto;
 }
 
 /* start header version desktop */
@@ -13,14 +14,16 @@
 	display: flex;
 	justify-content: space-between;
 }
+
 figure .logo{
 	width: 100px;
 }
+
 nav ul{
 	display: flex;
 	list-style-type: none;
-
 }
+
 ul li{
 	padding: 20px;
 	font-size: 16px;
@@ -33,6 +36,7 @@ li a{
 	
 }
 nav li a:hover{
+	
 	border-top: 2px solid #0065FC;
 	color: #0065FC;
 } /* end header version desktop */
@@ -53,6 +57,7 @@ nav li a:hover{
   	border-radius: 15px 0px 0px 15px;
 	background: #F2F2F2;
 	width: 50px;
+	height: 50px;
 	color: black;
 
 }
@@ -77,27 +82,32 @@ nav li a:hover{
 	border-left: 1px none #F2F2F2;
 	border-radius: 0px 15px 15px 0px;
 	width: 150px;
+	height: 51px;
 } /* end search form */
 
+/*start filters*/
 .filters{
 	display: flex;
-	flex-direction: row;
+	align-items: center;
+}
 
+.filters h3{
+	padding-right: 10px;
+	font-weight: bold;
 }
 
 .filter {
   display: flex;
-  flex-direction: row;
-  row-gap: 20px;
-  margin: auto;
+  margin: 10px;
+  padding-right: 20px;
   align-items: center;
   background: white;
   border: 2px solid #F2F2F2;
   border-left: 1px none #F2F2F2;
   border-radius: 50px 50px;
-  width: 200px;
-  height: 50px;  
+  height: 49px;
 }
+
 .filter_icon{
 	border: 1px solid #F2F2F2;
 	border-radius: 50px 50px;
@@ -105,6 +115,7 @@ nav li a:hover{
 	width: 50px;
 	height: 50px;
 }
+
 .filter_item, .info{
 	padding-left: 10px;
 }
@@ -136,35 +147,40 @@ nav li a:hover{
 	bottom: 3px;
 	left: 6px;
 	font-weight: bold;
-} /* end search form */
+} /* end filters */
 
 /* start Hébergement à Marseille */
 .hébergements{
 	display: flex;
-	flex-direction: row;
-	gap: 25px;
-	justify-content: space-between;
-	
+	align-items: center;
+	gap: 3%;
 	margin: auto;
-	
 }
-
+.card1 h2{
+	padding-left: 4%;
+	border: 1px solid yellow;
+	margin-top: 4%;
+}
+.more{
+	padding-left: 4%;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	border: 1px solid yellow;
+}
 .card1{
 	background: #F2F2F2;
 	border-radius: 15px 15px;
-	width: 70%;
-	height: 75%;
+	width: 65%;
+	border: 1px solid red;
 
-	
 }
 
 .popular{
 	background: #F2F2F2;
 	border-radius: 15px 15px;
-	width: 30%;
-	height: 75%;
+	width: 32%;
 	padding: auto;
-
+	border: 1px solid red;
 }
 
 .card{
@@ -172,9 +188,10 @@ nav li a:hover{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 15px 15px;
-  width: 200px;
-  height: 250px;
-
+  width: 240px;
+  padding: auto;
+  margin: 0;
+  border: 1px solid green;
 }
 
 .card:hover {
@@ -182,29 +199,47 @@ nav li a:hover{
 }
 
 .card_container {
-  padding: 0;
-  margin: 0;
+  padding: 0px 5px 0px 5px;
+  /*margin-bottom: 2%;*/
+  border: 1px solid blue;
+  width: 240px;
+  height: 100px;
+  
 }
+.card_container h4{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+.card_container p{
+	margin-top: 0;
+	margin-bottom: 2%;
+}
+
 
 .card_choice{
-		display: flex;  
-  	flex-wrap: wrap;
-  	justify-content: space-evenly;
-  	gap: 10px 10px;
+	display: flex;  
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  border: 1px solid blue;
+
 }
 
-.card_image img {
-  width: 200px;
-  height: 100px;
+.card img {
+  width: 240px;
+  height: 110px;
   object-fit: cover;
   padding: 5px 5px 0px 5px;
-  margin: 0;
+  margin-bottom: 0;
   border-radius: 15px 15px 0px 0px;
 }
-.card_image{
-	margin: 0;
-	padding: 0;
-}/* end Hébergement à Marseille */
+.star1{
+	color: blue;
+}
+.star2{
+	color: #F2F2F2;
+} /* end Hébergement à Marseille */
 
 /* start Les plus populaires */
 
@@ -215,22 +250,31 @@ nav li a:hover{
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
+	margin-top: 2%;
+	padding-bottom: 3%;
+	border: 1px solid yellow;
 }
+/*.popular_title h2{
+	margin-top: 4%;
+}*/
 
 
 
 .card_popular{
 	display: flex;
 	flex-direction: row;
-	gap: 10px;
+	align-items: center;
+	/*gap: 10px;*/
 	margin: auto;
+	padding: 0;
 	
   background: white;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 15px 15px;
-  width: 300px;
-  height: 125px;
+ /* width: 350px;*/
+  height: 150px;
+  border: 1px solid green;
 
 }
 
@@ -239,36 +283,47 @@ nav li a:hover{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.card_popular-container{
-  padding: 0;
-  margin: 0;
+.popular_container{
+  padding: 5px 15px 5px 0px;
+  /*margin-top: 3%;
+  margin-bottom: 3%;*/
   width: 185px;
-  height: 100px;
+  height: 130px;
+  border: 1px solid pink;
 }
 
 
 
-.card_popular-choice{
+.popular_choice{
 	display: flex;  
   	flex-direction: column;/*flex-wrap: wrap;*/
   	/*justify-content: space-evenly;*/
-  	align-content: center;
+  	justify-content: center;
   	margin: auto;
+  	padding-top: 0;
+  	padding-bottom: 12%;
   	gap: 20px 20px;
+  	border: 1px solid blue;
 }
 
-.card_popular-image img {
-  width: 115px;
-  height: 125px;
+.popular_image{
+  width: 135px;
+  height: 150px;
   object-fit: cover;
   padding: 5px 0px 5px 5px;
-  margin: 0;
+  margin-right: 3%;
   border-radius: 15px 0px 0px 15px;
 }
-.card_popular-image{
-	margin: 0;
-	padding: 0;
-}/* end Les plus populaires */
+.popular_container h4{
+	margin-top: 0;
+	margin-bottom: 2%;
+	border: 1px solid orange;
+}
+.popular_container p{
+	margin-top: 0;
+	border: 1px solid orange;
+}
+/* end Les plus populaires */
 
 
 

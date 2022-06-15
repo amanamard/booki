@@ -56,8 +56,8 @@ nav li a:hover{
 }
 #place{
 	position: relative;
-  	bottom: 16px;
-  	border-radius: 15px 0px 0px 15px;
+ 	bottom: 16px;
+  border-radius: 15px 0px 0px 15px;
 	background: #F2F2F2;
 	width: 50px;
 	height: 50px;
@@ -67,9 +67,9 @@ nav li a:hover{
 
 #position{
 	position: relative;
-  	top: 18px;
-  	left: 18px;
-  	border-right: 1px none #F2F2F2;
+  top: 18px;
+  left: 18px;
+  border-right: 1px none #F2F2F2;
 }
 #city{
 	position: relative;
@@ -100,7 +100,6 @@ nav li a:hover{
 /*start filters*/
 .filters{
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 }
 .filter_choice{
@@ -140,7 +139,6 @@ nav li a:hover{
 
 .filters_description{
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	margin-bottom: 1%;
 	row-gap: 20px;
@@ -223,7 +221,7 @@ nav li a:hover{
   border-radius: 15px 15px;
   width: 240px;
   height: 190px;
-  padding-bottom: 0;/*padding: auto;*/
+  padding-bottom: 0;
   margin: 0;
 }
 
@@ -278,27 +276,24 @@ nav li a:hover{
 /* start Les plus populaires */
 .popular_title{
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-	margin-top: 0;
+	margin: auto;
 	padding-top: 3.4%;
+
 }
 
 .card_popular{
 	display: flex;
-	flex-direction: row;
 	align-items: center;
   margin: auto;
 	padding: 0;
-	 background: white;
+	background: white;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 15px 15px;
   height: 140px;
   width: 85%;
-  
-
 }
 
 
@@ -355,17 +350,13 @@ nav li a:hover{
 	padding: 0;
 	margin: 0;
 	gap: 30px;
-	/*height: 450px;/*460px;*/
-	
+		
 }
 .choice{
 	width: 23%;
 	height: 100%;
 	margin: 0;
-	/*margin-top: 0;
-	margin-bottom: 0;*/
 	
-
 }
 .choice_frioul{
 	display: flex;
@@ -374,8 +365,6 @@ nav li a:hover{
 	width: 23%;
 	height: 100%;
 	margin: 0;
-	/*margin-top: 0;
-	margin-bottom: 0;*/
 	gap: 35px 35px;
 	
 }
@@ -386,8 +375,6 @@ nav li a:hover{
 	width: 23%;
 	height: 100%;
 	margin: 0;
-	/*margin-top: 0;
-	margin-bottom: 0;*/
 	gap: 35px 35px;
 	
 }
@@ -484,13 +471,15 @@ footer{
 	position: absolute;
 	left: 0;
 	right: 0;
-	display: flex;
-	flex-direction: row;
-	gap: 15%;
 	background: #F2F2F2;
-	padding-left: 3%;
 	margin-top: 5%;
 	padding-top: 1%;
+}
+#footer_bloc{
+	max-width: 1280px;
+  margin: auto;
+	display: flex;
+	gap: 15%;
 }
 footer ul{
 	list-style-type: none;
@@ -514,234 +503,3 @@ footer ul{
 
 
 
-@media screen and (max-width: 768px){
-
-	#bloc_page{
-		width: auto;
-		text-align: center;
-		
-	}
-/* start header */
-	header{
-		flex-direction: column;
-		width: auto;
-
-	}
-
-	.header_top{
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-	}
-
-	#logo{
-		width: 100%;
-		margin: auto;
-	}
-
-	nav ul a:hover{
-		border-top: 0px none white;
-		border-bottom: 3px solid #0065FC;
-	}
-
-	header h2{
-	margin: auto;
-	width: auto;
-
-	}
-	header p{
-	margin: auto;
-	width: auto;
-	padding-top: 3%;
-	padding-bottom: 4%;
-	} /*end header*/
-
-/* start search form */
-	#research{
-		display: none;
-	}
-
-	#search{
-		display: inline-block;
-		position: relative;
-		right: 18px;
-	 	bottom: 16px;
-	 	border-radius: 15px 15px;
-	 	height: 50px;
-	 	width: 50px;
-	}
-
-	#search_icon{
-	display: inline-block;
-	position: relative;
-  top: 16px;
-  left: 0px;
-	}
-
-	form{
-		margin: auto;
-		width: auto;
-	}
-
-	#position{
-		top: 15px;
-  	left: 4px;
-  } /* end search form */
-
-/*start filters*/
-	.filters{
-		flex-direction: column;
-		width: auto;
-	}
-
-	.icon{
-	left: 0px;
-	}
-	
-	#child{
-		left: 0px;
-	}
-
-	.description_icon{
-		margin: auto;
-	}
-
-	.info_icon{
-	left: 0px;
-	}
-	.filters_description{
-		width: auto;
-		margin: auto;
-		row-gap: 0;
-	}
-
-	.filter_title{
-		width: auto;
-		border: 1px solid red;
-		margin-left: 0;
-	
-	}
-
-	.filters_description{
-	width: auto;
-	margin: auto;
-	} /* end filters */
-
-/* start Hébergement à Marseille */
-	.hébergements{
-	flex-direction: column-reverse;
-	width: auto;
-	}
-
-	.card1{
-	width: auto;
-	display: flex;
-	flex-direction: column;
-	}
-
-	.popular{
-	width: auto;
-	display: flex;
-	flex-direction: column;
-	}
-
-/* activités à Marseille */
-
-	.activity{
-		width: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-	.activity_choice{
-		width: auto;
-		flex-direction: column;
-
-	}
-	
-
-	.card_activity1, .card_activity2, .card_activity3, .card_activity4{
-  background: white;
-  /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
-  /*transition: 0.3s;*/
-  /*border-radius: 15px 15px;*/
-  width: 240px;
-  height: 190px;
-  padding-bottom: 0;/*padding: auto;*/
-  margin: 0;
-	}
-	
-	.activity_image1, .activity_image2, .activity_image3, .activity_image4 {
-  width: 100%;
-  height: 110px;
-  /*object-fit: cover;*/
-  /*padding: 5px 5px 0px 5px;*/
-  margin-bottom: 0;
-  /*border-radius: 15px 15px 0px 0px;*/
-	}
-
-	
-
-
-	/*.card_activity1{
-	border-radius: 15px 15px;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 100%;
-  height: 456px;
-   
-	}
-
-	.activity_image1{
-	border-radius: 15px 15px 0px 0px;
-	width: 100%;
-	height: 390px;
-	object-fit: cover;
-	}*/
-
-
-	choice{
-		/*display: none;*/
-	/*width: 23%;
-	height: 100%;
-	margin: 0;
-	*/
-	
-
-}
-.choice_frioul{
-	/*display: none;*/
-	/*display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 23%;
-	height: 100%;
-	margin: 0;
-	gap: 35px 35px;*/
-	
-}
-.choice_longchamp{
-	/*display: none;*/
-	/*display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 23%;
-	height: 100%;
-	margin: 0;
-	gap: 35px 35px;*/
-	
-}
-	
-	
-
-	footer{
-		flex-direction: column;
-		width: auto;
-		text-align: left;
-	}
-	.third{
-	padding-left: 0;
-	}
-	
-}

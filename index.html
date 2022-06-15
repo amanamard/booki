@@ -23,8 +23,8 @@
 			
 			<!-- logo -->
 			<figure>
-				<img class="logo" src="images/logo/Booki.png" alt="logo Booki"/>
-			</figure>
+				<img id="logo" src="images/logo/Booki.png" alt="logo Booki"/>
+			</figure>			
 			
 			<!-- liens de navigation -->
 			<nav>
@@ -45,11 +45,15 @@
 		</div>
 		<input class="search_form" id="city" type="text" name="place" placeholder="Marseille, France"/>
 		<button class="search_form" id="research">Rechercher</button>
+		<div class="search_form" id="search">
+			<i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+	  	</div>
 	</form>
 	
 	<!-- Filtres -->
 	<section class="filters">
 		<h3>Filtres</h3>
+		<div class="filter_choice">
 		<div class="filter">
 			<div class="filter_icon">
 				<i class="fa-solid fa-money-bill-wave icon"></i>
@@ -85,6 +89,7 @@
 	  		<div class="filter_item">
 	  			<h3>Animaux autorisés</h3>
 	  		</div>
+		</div>
 		</div>
 	</section>
 

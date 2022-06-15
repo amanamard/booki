@@ -18,7 +18,7 @@
 	justify-content: space-between;
 }
 
-figure .logo{
+#logo{
 	width: 100px;
 }
 
@@ -45,7 +45,7 @@ nav li a:hover{
 } /* end header version desktop */
 
 /* start search form */
-.search_form{
+	.search_form{
 	display: inline-block;
 	width: 100px;
 	height: 50px;
@@ -64,6 +64,7 @@ nav li a:hover{
 	color: black;
 
 }
+
 #position{
 	position: relative;
   	top: 18px;
@@ -87,11 +88,24 @@ nav li a:hover{
 	width: 150px;
 	height: 51px;
 	font-weight: 700;
+}
+#search{
+	display: none;
+}
+
+#search_icon{
+	display: none;
 } /* end search form */
 
 /*start filters*/
 .filters{
 	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.filter_choice{
+	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 }
 
@@ -103,7 +117,7 @@ nav li a:hover{
 .filter {
   display: flex;
   margin: 10px;
-  padding-right: 20px;
+  padding-right: 8px;
   align-items: center;
   background: white;
   border: 2px solid #F2F2F2;
@@ -116,8 +130,8 @@ nav li a:hover{
 	border: 1px solid #F2F2F2;
 	border-radius: 50px 50px;
 	background: #deebff;
-	width: 50px;
-	height: 50px;
+	width: 49px;
+	height: 49px;
 }
 
 .filter_item, .info{
@@ -134,7 +148,6 @@ nav li a:hover{
 .description_icon{
 	border: 2px solid #F2F2F2;
 	border-radius: 20px 20px;
-	background: white;
 	width: 20px;
 	height: 20px;
 }
@@ -494,33 +507,110 @@ footer ul{
 
 
 @media screen and (max-width: 768px){
-	*{
-	box-sizing: border-box;
-	font-family: 'Raleway', sans-serif;
+	
+	body{
+		text-align: center;
 	}
-	header{
-		display: flex;
+	
+	
+	.header_top{
 		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 
 	}
-	figure .logo{
-		display: flex;
-		margin-left: auto;
-		margin-right: auto;
-		width: 150px;
+	
+	#logo{
+		width: 100%;
+		margin: auto;
 	}
 	nav ul{
-		display: flex;
-		margin-left: auto;
-		margin-right: auto;
-		justify-content: space-around;
-		border-bottom: 3px solid #F2F2F2;
+		
+		/*display: flex;
+		margin-left: 0;
+		margin-right: 0;*/
+		justify-content: center;
+		
 	}	
 	nav ul a:hover{
-		border-top: 2px none #0065FC;
+		border-top: 0px none white;
 		border-bottom: 3px solid #0065FC;
-		color: blue;
+		
 	
 	}
+header h2{
+	margin: auto;
+	width: 70%;
+
+}
+header p{
+	margin: auto;
+	padding-top: 3%;
+	padding-bottom: 4%;
+} /*end header*/
+
+
+/* start search form */
+#research{
+	display: none;
+}
+
+#search{
+	display: inline-block;
+	position: relative;
+	right: 18px;
+ 	bottom: 16px;
+ 	border-radius: 15px 15px;
+ 	height: 50px;
+ 	width: 50px;
+}
+
+#search_icon{
+	display: inline-block;
+	position: relative;
+  	top: 16px;
+  	left: 0px;
+}
+
+form{
+	/*display: inline-block;*/
+	margin: auto;
+}
+
+#position{
+	
+	top: 16px;
+  left: 4px;
+  	
+} /* end search form */
+
+
+.filters{
+	display: flex;
+	flex-direction: column;
+}
+
+.icon{
+	left: 0px;
+}
+#child{
+	left: 0px;
+}
+
+.description_icon{
+	margin: auto;
+}
+.info_icon{
+	/*color: blue;
+	font-size: 75%;
+	position: relative;
+	bottom: 3px;*/
+	left: 0px;
+	/*font-weight: 700;*/
+}
+.info{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
 }

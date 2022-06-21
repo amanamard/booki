@@ -29,6 +29,7 @@ header{
 
 #logo{
 	width: 100px;
+	margin-left: -15%;
 }
 
 nav ul li{
@@ -57,7 +58,6 @@ form{
 
 .search_form{
 	display: inline-block;
-	width: 100px;
 	height: 50px;
 	background: #0065FC;
 	border: 1px solid #F2F2F2;
@@ -85,7 +85,7 @@ form{
 	position: relative;
 	right: 4px;
 	background: white;
-	width: 220px;
+	width: 200px;
 	padding-left: 10px;
 	color: black;
 	font-weight: 700;
@@ -95,7 +95,7 @@ form{
 	right: 8px;
 	border-left: 1px none #F2F2F2;
 	border-radius: 0px 15px 15px 0px;
-	width: 150px;
+	width: 130px;/*150px;*/
 	height: 51px;
 	font-weight: 700;
 }
@@ -113,6 +113,7 @@ form{
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;
+	gap: 1%;
 }
 .filter_choice{
 	display: flex;
@@ -121,7 +122,7 @@ form{
 }
 
 .filter_title h3{
-	padding-right: 15px;
+	/*padding-right: 10%;/*15px;*/
 	font-weight: bold;
 }
 
@@ -324,14 +325,14 @@ form{
 .popular_choice{
 	display: flex;  
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: auto;
   gap: 20px 20px;
   
 }
 
 .popular_image{
-  width: 135px;
+  width: 37%;
   height: 100%;
   object-fit: cover;
   padding: 5px 0px 5px 5px;
@@ -574,6 +575,9 @@ footer ul{
 	}
 
 	.header_top{
+		/*border: 1px solid blue;*/
+		margin: 0;
+		padding: 0;
 		width: auto;
 		flex-direction: column;
 		justify-content: center;
@@ -583,34 +587,43 @@ footer ul{
 	#logo{
 		width: auto;
 		margin: auto;
-  	/*padding-left: 25%;*/
+  	padding-left: 12%;
   	padding-right: 0;
 	}
 
-	/*nav{
-		border: 1px solid green;
+	nav{
+		border-bottom: 5px solid #F2F2F2;
+		height: 79.5px;
 		width: 100%;
-		
-	}*/
+		margin: 0;
+		padding: 0;
+	}
+	.nav1{
+		width: 54%;
+		margin-left: -9%;
+		padding-left: 10%;
+		margin-right: 0;
+	}
+	.nav2{
+		width: 54%;
+		padding-right: 0;
+		padding-left: 15%;
+		margin-right: 0;
+		margin-left: 0;
 
-	/*nav ul li{
-		border: 1px solid red;
-		margin: auto;
-		text-align: center;
-		/*display: inline-block;
-		list-style-type: none;
-		padding: 20px;
-		font-size: 16px;
-	
-}*/
-	nav ul a:hover{
+	}
+
+	nav li a:hover{
 		border-top: 0px none white;
-		border-bottom: 3px solid #0065FC;
+	}
+	nav li:hover{
+		border-bottom: 5px solid #0065FC;
 	}
 
 	header h2{
 		text-align: center;
 		margin: auto;
+		padding-top: 10%;
 		width: auto;
 	}
 
@@ -692,10 +705,10 @@ footer ul{
 	.filter_title h3{
 		padding-left: 2%;
 	}
+	
 	.filters_description{
 		width: auto;
-		margin: auto;
-		justify-content: flex-start;
+		align-items: baseline;
 	}
 
 	.popular{
@@ -777,7 +790,7 @@ footer ul{
 
   footer{
 	padding-top: 3%;
-}
+	}
 
 	#footer_bloc{
 		width: auto;

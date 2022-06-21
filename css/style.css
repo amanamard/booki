@@ -585,7 +585,7 @@ footer ul{
 	}
 
 	#logo{
-		width: auto;
+		width: 150px;
 		margin: auto;
   	padding-left: 12%;
   	padding-right: 0;
@@ -599,13 +599,13 @@ footer ul{
 		padding: 0;
 	}
 	.nav1{
-		width: 54%;
+		width: 53%;
 		margin-left: -9%;
-		padding-left: 10%;
+		padding-left: 5%;
 		margin-right: 0;
 	}
 	.nav2{
-		width: 54%;
+		width: 53%;
 		padding-right: 0;
 		padding-left: 15%;
 		margin-right: 0;

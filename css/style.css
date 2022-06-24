@@ -141,6 +141,7 @@ form{
 .filter:hover{
 	border-color: #0065FC;
 	color: #0065FC;
+	transition: 1s;
 	cursor: pointer;
 }
 
